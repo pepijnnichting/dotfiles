@@ -1,94 +1,83 @@
-#!/bin/bash
+#!/bin/sh
 
-# install Brew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
-brew update
-
-# install browsers
-brew cask install google-chrome
-brew cask install firefox
-brew cask install microsoft-edge
-
-# install communication tools
-brew cask install slack
-brew cask install microsoft-teams
-brew cask install zoom
-brew cask install skype
-
-# install cloud tools
-brew cask install dropbox
-brew cask install google-backup-and-sync
-brew cask install boxcryptor
-
-# install further tools
-brew cask install 1password
-brew cask install toggl
-brew cask install anydesk
-brew cask install pgadmin4
-brew cask install postman
-brew cask install ngrok
-brew cask install the-unarchiver
-brew cask install sublime-text
-brew cask install stats
-brew cask install keycastr
-brew cask install krisp
-brew cask install vagrant
-brew cask install virtualbox
-
-brew cask install spectacle
-# brew cask install rectangle
+# Homebrew Script for OSX
+# To execute: save and `chmod +x ./brew-install-script.sh` then `./brew-install-script.sh`
 
 
-# install developer related tools
-brew cask install intellij-idea
-brew cask install postgres
-brew cask install docker
-brew cask install chromedriver
+if [[ $(command -v brew) == "" ]]; then
+  echo "Installing brew..."
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+else
+    echo "Updating Homebrew"
+    brew update
+fi
 
-# install Java
-brew tap AdoptOpenJDK/openjdk
-brew cask install adoptopenjdk8
-brew cask install adoptopenjdk11
-brew cask install adoptopenjdk14
+echo "Installing brew cask..."
+brew tap homebrew/cask
 
-# install jenv - alternatively use JDKMAN
-brew install jenv
-pause
-# follow install instructions: https://www.jenv.be/
-# For example, for installing it for ZSH:
-# echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc
-# echo 'eval "$(jenv init -)"' >> ~/.zshrc
-#
-# Then, add all JDKs:
-# jenv add <jdk-install-path>
-jenv enable-plugin maven
-jenv enable-plugin export
+# browsers
+echo "Installing browsers..."
+brew install --cask google-chrome
+brew install --cask firefox
+brew install --cask microsoft-edge
 
-# install various CLI tools
-brew install maven
+# communication tools
+echo "Installing communication apps..."
+brew install --cask slack
+brew install --cask discord
+brew install --cask microsoft-teams
+brew install --cask microsoft-outlook
+
+# basic apps
+echo "Installing basic apps..."
+brew install --cask dropbox
+brew install --cask 1password
+brew install --cask nordvpn
+brew install --cask tunnelblick
+brew install --cask the-unarchiver
+brew install --cask plex
+brew install --cask stats
+brew install --cask cakebrew
+brew install --cask copyclip
+brew install --cask spotify
+brew install --cask transmission
+brew install --cask vlc
+brew install --cask whatsapp
+brew install --cask switch
+brew install --cask steam
+
+# Dev Tools
+echo "Installing development tools..."
+brew install --cask ngrok
+brew install --cask phpstorm
+brew install --cask postman
+brew install --cask visual-studio-code
+brew install --cask warp
+brew install --cask docker
+brew install --cask chromedriver
+brew install --cask poedit
+brew install --cask transmit
+brew install --cask sourcetree
+brew install --cask sketch
+brew install --cask imageoptim
+brew install --cask gas-mask
+
+
+#  CLI tools
+echo "Installing CLI tools..."
 brew install git
 brew install node
 brew install yarn
-
-# install cloud development tools
-brew tap aws/tap
-brew install awscli
-brew install aws-cdk
-brew install aws-sam-cli
-brew install serverless
-
-# install other cmd tools
-brew install httpie
-brew install tldr
+brew install azure-cli
+brew install azcopy
+brew install helm
 brew install mkcert
-brew install jq
-brew install mitmproxy
+brew install ncdu
+brew install starship
+brew install thefuck
+brew install tidy-html5
+brew install python@3.10
 
 
 # manual steps
-echo "Install Monosnap (https://monosnap.com/) manually from the App Store"
-echo "Install USGerman Keyboard Layout: https://hci.rwth-aachen.de/usgermankeyboard"
-echo "Make sure you have a strong password to protect your Mac's user account."
-echo "Adjust Mac's security settings: enable FileVault and require password instantly."
-echo "Make sure to create an SSH key pair and restrict access to .ssh using chmod 700 ~/.ssh"
+echo "Install Bettersnaptool (https://folivora.ai/bettersnaptool/) manually from the App Store"
