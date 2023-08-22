@@ -1,48 +1,7 @@
-
-
-
-
-
-
-
-
-
-
-
-#  CLI tools
-echo "Installing CLI tools..."
-brew install git
-brew install node
-brew install yarn
-brew install azure-cli
-brew install azcopy
-brew install helm
-brew install mkcert
-brew install ncdu
-brew install starship
-brew install thefuck
-brew install tidy-html5
-brew install python@3.10
-
-
-# manual steps
-echo "Install Bettersnaptool (https://folivora.ai/bettersnaptool/) manually from the App Store"
-
-
-
-
-
-
-
-
-
-
-
 # Taps
 tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
-tap 'homebrew/cask-drivers'
 tap 'homebrew/bundle'
 tap "buo/cask-upgrade"
 
@@ -85,9 +44,18 @@ brew 'rust'
 brew 'python'
 brew 'pyenv'
 brew 'ext4fuse'
+brew 'azure-cli'
+brew 'azcopy'
+brew 'helm'
+brew 'mkcert'
+brew 'ncdu'
+brew 'starship'
+brew 'thefuck'
+brew 'tidy-html5'
 
 # Apps
 cask '1password-beta'
+#cask '1password'
 cask 'rar'
 cask 'spotify'
 cask 'the-unarchiver'
@@ -98,53 +66,43 @@ cask 'transmission'
 cask 'hiddenbar'
 cask 'macfuse'
 cask 'balenaetcher'
-cask dropbox
-#cask 1password
-cask tunnelblick
-cask plex
-cask stats
-cask cakebrew
-cask whatsapp
-cask switch
-cask steam
+cask 'dropbox'
+cask 'tunnelblick'
+cask 'plex'
+cask 'stats'
+cask 'cakebrew'
+cask 'whatsapp'
+cask 'switch'
+cask 'steam'
 
+# communication Apps
+cask 'slack'
+cask 'discord'
+cask 'microsoft-teams'
+cask 'microsoft-outlook'
 
-
-## communication tools
-cask slack
-cask discord
-cask microsoft-teams
-cask microsoft-outlook
-
-## Development Apps
-cask ngrok
-cask phpstorm
-cask postman
-cask visual-studio-code
-cask warp
-cask docker
-cask chromedriver
-cask poedit
-cask transmit
-cask sourcetree
-cask sketch
-cask figma
-cask imageoptim
-cask gas-mask
+# Development Apps
+cask 'ngrok'
+cask 'phpstorm'
+cask 'postman'
+cask 'visual-studio-code'
+cask 'warp'
+cask 'docker'
+cask 'chromedriver'
+cask 'poedit'
+cask 'transmit'
+cask 'sourcetree'
+cask 'sketch'
+cask 'figma'
+cask 'imageoptim'
+cask 'gas-mask'
 cask 'arduino'
 cask 'quicklook-json'
 
-
-
-## browsers
+# browsers
 cask 'firefox'
 cask 'google-chrome'
 cask 'microsoft-edge'
-
-#cask 'microsoft-auto-update'
-#cask 'microsoft-word'
-#cask 'microsoft-excel'
-
 
 # Fonts
 cask 'font-lato'

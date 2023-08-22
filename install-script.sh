@@ -38,21 +38,5 @@ then
   ln -s $DOTFILES/settings/ssh_config $HOME/.ssh/config
 fi
 
-# Create a Projects directory
-if [[ ! -d $HOME/Projects ]]
-then
-  mkdir $HOME/Projects
-fi
-
 # Set global gitignore file to be used
 git config --global core.excludesfile $DOTFILES/.gitignore_global
-
-# Symlink the Mackup config file to the home directory
-if [[ ! -f $HOME/.mackup.cfg ]]
-then
-  ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
-fi
-
-# Set macOS preferences - we will run this last because this will reload the shell
-# source $DOTFILES/.macos
-

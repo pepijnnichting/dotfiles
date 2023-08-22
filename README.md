@@ -13,4 +13,9 @@ git clone https://github.com/pepijnnichting/dotfiles.git ~/.dotfiles
 2. run install script
 ```zsh
 sh ~/.dotfiles/install-script.sh
+
+or run if you only want to install brews
+
+brew bundle --file ~/.dotfiles/Brewfile
+
 ```
