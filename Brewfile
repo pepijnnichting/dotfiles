@@ -1,5 +1,5 @@
 # Taps
-tap 'homebrew/cask'
+# tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
@@ -53,6 +53,7 @@ brew 'ncdu'
 brew 'starship'
 brew 'thefuck'
 brew 'tidy-html5'
+brew 'artginzburg/tap/sudo-touchid'
 
 # Apps
 cask '1password-beta'
@@ -66,7 +67,6 @@ cask 'clipy'
 cask 'transmission'
 cask 'hiddenbar'
 cask 'macfuse'
-# cask 'balenaetcher'
 cask 'dropbox'
 cask 'tunnelblick'
 cask 'plex'
@@ -96,7 +96,6 @@ cask 'sourcetree'
 cask 'sketch'
 cask 'figma'
 cask 'imageoptim'
-cask 'gas-mask'
 cask 'arduino'
 cask 'quicklook-json'
 cask 'sonos'
@@ -114,6 +113,7 @@ cask 'font-roboto'
 # Mac App Store
 mas 'BetterSnapTool', id: 417375580
 mas 'Microsoft Remote Desktop', id: 1295203466
+mas 'Helm - Hosts file manager', id: 1099472017
 #mas 'Keynote', id: 409183694
 #mas 'Numbers', id: 409203825
 #mas 'iMovie', id: 408981434
