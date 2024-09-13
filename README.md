@@ -19,3 +19,12 @@ or run if you only want to install brews
 brew bundle --file ~/.dotfiles/Brewfile
 
 ```
+
+2. Update Brewfile  if you changed the brew setup
+```zsh
+brew bundle dump --describe --force --file=Brewfile
+git add Brewfile
+git commit -m "Update Brewfile"
+git push
+```
+
