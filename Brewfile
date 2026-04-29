@@ -181,8 +181,6 @@ cask "rar"
 cask "serial"
 # Instant messaging application focusing on security
 cask "signal"
-# Video chat, voice call and instant messaging application
-cask "skype"
 # Team communication and collaboration software
 cask "slack"
 # Control your Sonos system
@@ -211,6 +209,8 @@ cask "vlc"
 cask "warp"
 # Native desktop client for WhatsApp
 cask "whatsapp"
+# Ubiquiti WiFi analyzer
+cask "wifiman"
 mas "1Password for Safari", id: 1569813296
 mas "AdBlock Pro", id: 1018301773
 mas "Amphetamine", id: 937984704
