@@ -1,26 +1,29 @@
 tap "artginzburg/tap"
 tap "buo/cask-upgrade"
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
 tap "homebrew/services"
 tap "jacobwgillespie/tap"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
+tap "wpscanteam/tap"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Azure Storage data transfer utility
 brew "azcopy"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.14"
 # Microsoft Azure CLI 2.0
 brew "azure-cli"
-# Bourne-Again SHell, a UNIX command interpreter
-brew "bash"
 # GNU internationalization (i18n) and localization (l10n) library
 brew "gettext"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
 # Perl compatible regular expressions library with a new API
 brew "pcre2"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.12"
+# Core application library for C
+brew "glib"
+# Libraries to talk to Microsoft SQL Server and Sybase databases
+brew "freetds"
+# Postgres C API library
+brew "libpq", link: true
 # Granddaddy of HTML tools, with support for modern standards
 brew "tidy-html5"
 # General-purpose scripting language
@@ -29,17 +32,25 @@ brew "php"
 brew "composer"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
-# Play, record, convert, and stream audio and video
+# Isolated development environments using Docker
+brew "docker-compose"
+# Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# GitHub command-line tool
+brew "gh"
 # Distributed revision control system
 brew "git"
+# OpenType text shaping engine
+brew "harfbuzz"
 # Kubernetes package manager
 brew "helm"
 # Improved top (interactive process viewer)
 brew "htop"
-# Tools and libraries to manipulate images in many formats
+# C/C++ and Java libraries for Unicode and globalization
+brew "icu4c@76"
+# Tools and libraries to manipulate images in select formats
 brew "imagemagick"
 # Utility to optimize JPEG files
 brew "jpegoptim"
@@ -49,14 +60,22 @@ brew "jq"
 brew "kompose"
 # Template-free customization of Kubernetes YAML manifests
 brew "kustomize"
+# Next-gen compiler infrastructure
+brew "llvm"
 # Mac App Store command-line interface
 brew "mas"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
+# 'traceroute' and 'ping' in a single tool
+brew "mtr"
 # NCurses Disk Usage
 brew "ncdu"
-# Platform built on V8 to build network applications
-brew "node@20"
+# Port scanning utility for large networks
+brew "nmap"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node@24", link: true
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
 # Python version management
 brew "pyenv"
 # Persistent key-value database, with built-in net interface
@@ -67,8 +86,8 @@ brew "rust"
 brew "starship"
 # Version control system designed to be a better CVS
 brew "subversion"
-# Programmatically correct mistyped console commands
-brew "thefuck"
+# OCR (Optical Character Recognition) engine
+brew "tesseract"
 # Internet file retriever
 brew "wget"
 # JavaScript package manager
@@ -79,6 +98,8 @@ brew "zoxide"
 brew "artginzburg/tap/sudo-touchid"
 # Git branch sync utility
 brew "jacobwgillespie/tap/git-sync"
+# Black box WordPress vulnerability scanner
+brew "wpscanteam/tap/wpscan"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Sends audio from computer to outputs
@@ -87,16 +108,18 @@ cask "airfoil"
 cask "arduino"
 # Integrated CAD, CAM, CAE, and PCB software
 cask "autodesk-fusion"
+# App for managing battery charging. (Also installs a CLI on first use.)
+cask "battery"
 # GUI app for Homebrew
 cask "cakebrew"
 # E-books management software
 cask "calibre"
 # Automated testing of webapps for Google Chrome
 cask "chromedriver"
+# Databases and SQL IDE
+cask "datagrip"
 # Voice and text chat software
 cask "discord"
-# App to build and share containerised applications and microservices
-cask "docker"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
 # Collaborative team software
@@ -124,7 +147,7 @@ cask "macfuse"
 cask "microsoft-auto-update"
 # Explorer for Azure Storage
 cask "microsoft-azure-storage-explorer"
-# Web browser
+# Multi-platform web browser
 cask "microsoft-edge"
 # Spreadsheet software
 cask "microsoft-excel"
@@ -140,10 +163,12 @@ cask "ngrok"
 cask "nordvpn"
 # Cloud storage client
 cask "onedrive"
-# PHP IDE by JetBrains
-cask "phpstorm"
+# Replacement for Docker Desktop
+cask "orbstack"
 # Home media player
 cask "plex"
+# Home media server
+cask "plex-media-server"
 # Translation editor
 cask "poedit"
 # Collaboration platform for API development
@@ -152,8 +177,10 @@ cask "postman"
 cask "quicklook-json"
 # Archive manager for data compression and backups
 cask "rar"
-# Digital design and prototyping platform
-cask "sketch"
+# Connect to almost anything with a serial port
+cask "serial"
+# Instant messaging application focusing on security
+cask "signal"
 # Video chat, voice call and instant messaging application
 cask "skype"
 # Team communication and collaboration software
@@ -168,8 +195,6 @@ cask "spotify"
 cask "stats"
 # Video game digital distribution service
 cask "steam"
-# Multiple format audio file converter
-cask "switch"
 # Remote access and connectivity software focused on security
 cask "teamviewer"
 # Unpacks archive files
@@ -190,27 +215,54 @@ mas "1Password for Safari", id: 1569813296
 mas "AdBlock Pro", id: 1018301773
 mas "Amphetamine", id: 937984704
 mas "BetterSnapTool", id: 417375580
+mas "ControllerForHomeKit", id: 1198176727
 mas "GarageBand", id: 682658836
 mas "Helm", id: 1099472017
 mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
+mas "Infuse", id: 1136220934
+mas "Keynote", id: 361285480
 mas "Microsoft Remote Desktop", id: 1295203466
+mas "Mirror My Screen", id: 1525556960
 mas "MQTT Explorer", id: 1455214828
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
+mas "Numbers", id: 361304891
+mas "Pages", id: 361309726
 mas "Trello", id: 1278508951
 vscode "ambooth.git-rename"
 vscode "bmewburn.vscode-intelephense-client"
+vscode "bradlc.vscode-tailwindcss"
+vscode "csstools.postcss"
+vscode "cweijan.dbclient-jdbc"
+vscode "cweijan.vscode-mysql-client2"
+vscode "dbaeumer.vscode-eslint"
 vscode "devsense.composer-php-vscode"
 vscode "devsense.intelli-php-vscode"
 vscode "devsense.phptools-vscode"
 vscode "devsense.profiler-php-vscode"
+vscode "docker.docker"
+vscode "ecmel.vscode-html-css"
+vscode "editorconfig.editorconfig"
+vscode "esbenp.prettier-vscode"
 vscode "figma.figma-vscode-extension"
-vscode "github.copilot"
 vscode "github.copilot-chat"
 vscode "github.vscode-github-actions"
 vscode "golang.go"
+vscode "google.geminicodeassist"
+vscode "googlecloudtools.cloudcode"
+vscode "graphql.vscode-graphql"
+vscode "graphql.vscode-graphql-syntax"
+vscode "hridoy.wordpress"
+vscode "irongeek.vscode-env"
+vscode "mechatroner.rainbow-csv"
+vscode "mikestead.dotenv"
+vscode "mindaro-dev.file-downloader"
+vscode "ms-azuretools.vscode-azure-github-copilot"
+vscode "ms-azuretools.vscode-azure-mcp-server"
+vscode "ms-azuretools.vscode-azureresourcegroups"
+vscode "ms-azuretools.vscode-azurestorage"
+vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
+vscode "ms-dotnettools.vscode-dotnet-runtime"
+vscode "ms-kubernetes-tools.vscode-aks-tools"
 vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
 vscode "ms-mssql.data-workspace-vscode"
 vscode "ms-mssql.mssql"
@@ -219,6 +271,22 @@ vscode "ms-mssql.sql-database-projects-vscode"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
 vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode.cmake-tools"
+vscode "ms-vscode.cpp-devtools"
+vscode "ms-vscode.cpptools"
+vscode "ms-vscode.cpptools-extension-pack"
+vscode "ms-vscode.cpptools-themes"
+vscode "pwarchol.vscode-php-file-link"
+vscode "qwtel.sqlite-viewer"
+vscode "r-moriut.dfile-profiler"
 vscode "redhat.vscode-yaml"
+vscode "saoudrizwan.claude-dev"
+vscode "stylelint.vscode-stylelint"
+vscode "svelte.svelte-vscode"
+vscode "thenouillet.symfony-vscode"
+vscode "twxs.cmake"
+vscode "valeryanm.vscode-phpsab"
+vscode "wallabyjs.console-ninja"
 vscode "zobo.php-intellisense"
