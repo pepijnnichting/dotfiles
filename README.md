@@ -11,6 +11,7 @@ git clone https://github.com/pepijnnichting/dotfiles.git ~/.dotfiles
 ```
 
 2. run install script
+
 ```zsh
 sh ~/.dotfiles/install-script.sh
 
@@ -20,11 +21,11 @@ brew bundle --file ~/.dotfiles/Brewfile
 
 ```
 
-2. Update Brewfile  if you changed the brew setup
+2. Update Brewfile if you changed the brew setup
+
 ```zsh
-brew bundle dump --describe --force --file=Brewfile
+brew bundle dump --force --file=Brewfile
 git add Brewfile
 git commit -m "Update Brewfile"
 git push
 ```
-

@@ -1,15 +1,10 @@
 tap "artginzburg/tap"
-tap "buo/cask-upgrade"
 tap "homebrew/bundle"
 tap "homebrew/services"
-tap "jacobwgillespie/tap"
-tap "wpscanteam/tap"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Azure Storage data transfer utility
 brew "azcopy"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.14"
 # Microsoft Azure CLI 2.0
 brew "azure-cli"
 # GNU internationalization (i18n) and localization (l10n) library
@@ -22,6 +17,8 @@ brew "pcre2"
 brew "glib"
 # Libraries to talk to Microsoft SQL Server and Sybase databases
 brew "freetds"
+# TIFF library and utilities
+brew "libtiff"
 # Postgres C API library
 brew "libpq", link: true
 # Granddaddy of HTML tools, with support for modern standards
@@ -42,6 +39,8 @@ brew "fzf"
 brew "gh"
 # Distributed revision control system
 brew "git"
+# Small git utilities
+brew "git-extras"
 # OpenType text shaping engine
 brew "harfbuzz"
 # Kubernetes package manager
@@ -73,11 +72,15 @@ brew "ncdu"
 # Port scanning utility for large networks
 brew "nmap"
 # Open-source, cross-platform JavaScript runtime environment
+brew "node@22"
+# Open-source, cross-platform JavaScript runtime environment
 brew "node@24", link: true
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # Python version management
 brew "pyenv"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
 # Persistent key-value database, with built-in net interface
 brew "redis"
 # Safe, concurrent, practical language
@@ -88,6 +91,8 @@ brew "starship"
 brew "subversion"
 # OCR (Optical Character Recognition) engine
 brew "tesseract"
+# Executes a program periodically, showing output fullscreen
+brew "watch"
 # Internet file retriever
 brew "wget"
 # JavaScript package manager
@@ -95,22 +100,16 @@ brew "yarn"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # Permanent TouchID support for sudo
-brew "artginzburg/tap/sudo-touchid"
-# Git branch sync utility
-brew "jacobwgillespie/tap/git-sync"
-# Black box WordPress vulnerability scanner
-brew "wpscanteam/tap/wpscan"
+brew "artginzburg/tap/sudo-touchid", trusted: true
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Sends audio from computer to outputs
 cask "airfoil"
-# Electronics prototyping platform
 cask "arduino"
 # Integrated CAD, CAM, CAE, and PCB software
 cask "autodesk-fusion"
 # App for managing battery charging. (Also installs a CLI on first use.)
 cask "battery"
-# GUI app for Homebrew
 cask "cakebrew"
 # E-books management software
 cask "calibre"
@@ -173,8 +172,6 @@ cask "plex-media-server"
 cask "poedit"
 # Collaboration platform for API development
 cask "postman"
-# Quick Look plugin for JSON files
-cask "quicklook-json"
 # Archive manager for data compression and backups
 cask "rar"
 # Connect to almost anything with a serial port
@@ -209,7 +206,7 @@ cask "vlc"
 cask "warp"
 # Native desktop client for WhatsApp
 cask "whatsapp"
-# Ubiquiti WiFi analyzer
+# Network monitoring and troubleshooting tool
 cask "wifiman"
 mas "1Password for Safari", id: 1569813296
 mas "AdBlock Pro", id: 1018301773
@@ -243,11 +240,11 @@ vscode "ecmel.vscode-html-css"
 vscode "editorconfig.editorconfig"
 vscode "esbenp.prettier-vscode"
 vscode "figma.figma-vscode-extension"
-vscode "github.copilot-chat"
 vscode "github.vscode-github-actions"
 vscode "golang.go"
 vscode "google.geminicodeassist"
 vscode "googlecloudtools.cloudcode"
+vscode "googlecloudtools.datacloud"
 vscode "graphql.vscode-graphql"
 vscode "graphql.vscode-graphql-syntax"
 vscode "hridoy.wordpress"
@@ -272,6 +269,11 @@ vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
 vscode "ms-python.vscode-python-envs"
+vscode "ms-toolsai.jupyter"
+vscode "ms-toolsai.jupyter-keymap"
+vscode "ms-toolsai.jupyter-renderers"
+vscode "ms-toolsai.vscode-jupyter-cell-tags"
+vscode "ms-toolsai.vscode-jupyter-slideshow"
 vscode "ms-vscode-remote.remote-containers"
 vscode "ms-vscode.cmake-tools"
 vscode "ms-vscode.cpp-devtools"
@@ -290,3 +292,9 @@ vscode "twxs.cmake"
 vscode "valeryanm.vscode-phpsab"
 vscode "wallabyjs.console-ninja"
 vscode "zobo.php-intellisense"
+npm "corepack"
+npm "gulp-cli"
+npm "gulp"
+npm "npm-check-updates"
+npm "pnpm"
+npm "yalc"
