@@ -1,0 +1,5 @@
+[pull]
+	rebase = true
+
+[alias]
+	sync = !git fetch --prune && git pull --rebase

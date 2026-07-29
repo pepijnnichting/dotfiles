@@ -21,7 +21,16 @@ brew bundle --file ~/.dotfiles/Brewfile
 
 ```
 
-2. Update Brewfile if you changed the brew setup
+3. Git defaults beheren via dotfiles
+
+```zsh
+# Deze repo-bestanden worden globaal ingeladen:
+~/.dotfiles/.gitconfig
+```
+
+Je kunt daar bijvoorbeeld `pull.rebase=true` beheren, net als je aliases.
+
+4. Update Brewfile if you changed the brew setup
 
 ```zsh
 brew bundle dump --force --file=Brewfile

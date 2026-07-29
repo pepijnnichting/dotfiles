@@ -40,3 +40,6 @@ fi
 
 # Set global gitignore file to be used
 git config --global core.excludesfile $DOTFILES/.gitignore_global
+
+# Load repo-managed git defaults globally
+git config --global include.path $DOTFILES/.gitconfig

@@ -39,8 +39,6 @@ brew "fzf"
 brew "gh"
 # Distributed revision control system
 brew "git"
-# Small git utilities
-brew "git-extras"
 # OpenType text shaping engine
 brew "harfbuzz"
 # Kubernetes package manager
