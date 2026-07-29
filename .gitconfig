@@ -3,3 +3,4 @@
 
 [alias]
 	sync = !git fetch --prune && git pull --rebase
+	syncall = !sh "$HOME/.dotfiles/scripts/git-syncall.sh"
