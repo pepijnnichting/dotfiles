@@ -1,6 +1,7 @@
 tap "artginzburg/tap"
 tap "homebrew/bundle"
 tap "homebrew/services"
+tap "osx-cross/arm"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Azure Storage data transfer utility
@@ -33,14 +34,16 @@ brew "coreutils"
 brew "docker-compose"
 # Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
+# OpenType text shaping engine
+brew "harfbuzz"
+# X11 implementation of the Remote Desktop Protocol (RDP)
+brew "freerdp"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
 brew "git"
-# OpenType text shaping engine
-brew "harfbuzz"
 # Kubernetes package manager
 brew "helm"
 # Improved top (interactive process viewer)
@@ -70,9 +73,7 @@ brew "ncdu"
 # Port scanning utility for large networks
 brew "nmap"
 # Open-source, cross-platform JavaScript runtime environment
-brew "node@22"
-# Open-source, cross-platform JavaScript runtime environment
-brew "node@24", link: true
+brew "node@26", link: true
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # Python version management
@@ -166,12 +167,14 @@ cask "orbstack"
 cask "plex"
 # Home media server
 cask "plex-media-server"
-# Translation editor
-cask "poedit"
 # Collaboration platform for API development
 cask "postman"
+# PL2303 USB-to-serial driver
+cask "prolific-pl2303"
 # Archive manager for data compression and backups
 cask "rar"
+# Centralises all remote connections on a single platform
+cask "remote-desktop-manager"
 # Connect to almost anything with a serial port
 cask "serial"
 # Instant messaging application focusing on security
@@ -188,6 +191,8 @@ cask "spotify"
 cask "stats"
 # Video game digital distribution service
 cask "steam"
+# Native database client for many database types
+cask "tablepro"
 # Remote access and connectivity software focused on security
 cask "teamviewer"
 # Unpacks archive files
@@ -209,25 +214,25 @@ cask "wifiman"
 mas "1Password for Safari", id: 1569813296
 mas "AdBlock Pro", id: 1018301773
 mas "Amphetamine", id: 937984704
-mas "BetterSnapTool", id: 417375580
 mas "ControllerForHomeKit", id: 1198176727
 mas "GarageBand", id: 682658836
 mas "Helm", id: 1099472017
 mas "iMovie", id: 408981434
-mas "Infuse", id: 1136220934
 mas "Keynote", id: 361285480
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Mirror My Screen", id: 1525556960
 mas "MQTT Explorer", id: 1455214828
 mas "Numbers", id: 361304891
 mas "Pages", id: 361309726
-mas "Trello", id: 1278508951
+mas "Pixelmator Pro", id: 1289583905
 vscode "ambooth.git-rename"
 vscode "bmewburn.vscode-intelephense-client"
 vscode "bradlc.vscode-tailwindcss"
+vscode "christian-kohler.npm-intellisense"
 vscode "csstools.postcss"
 vscode "cweijan.dbclient-jdbc"
 vscode "cweijan.vscode-mysql-client2"
+vscode "davidanson.vscode-markdownlint"
 vscode "dbaeumer.vscode-eslint"
 vscode "devsense.composer-php-vscode"
 vscode "devsense.intelli-php-vscode"
@@ -238,6 +243,7 @@ vscode "ecmel.vscode-html-css"
 vscode "editorconfig.editorconfig"
 vscode "esbenp.prettier-vscode"
 vscode "figma.figma-vscode-extension"
+vscode "firefox-devtools.vscode-firefox-debug"
 vscode "github.vscode-github-actions"
 vscode "golang.go"
 vscode "google.geminicodeassist"
@@ -246,6 +252,7 @@ vscode "googlecloudtools.datacloud"
 vscode "graphql.vscode-graphql"
 vscode "graphql.vscode-graphql-syntax"
 vscode "hridoy.wordpress"
+vscode "ikappas.phpcs"
 vscode "irongeek.vscode-env"
 vscode "mechatroner.rainbow-csv"
 vscode "mikestead.dotenv"
@@ -257,6 +264,7 @@ vscode "ms-azuretools.vscode-azurestorage"
 vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-dotnettools.vscode-dotnet-runtime"
+vscode "ms-edgedevtools.vscode-edge-devtools"
 vscode "ms-kubernetes-tools.vscode-aks-tools"
 vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
 vscode "ms-mssql.data-workspace-vscode"
@@ -288,9 +296,9 @@ vscode "svelte.svelte-vscode"
 vscode "thenouillet.symfony-vscode"
 vscode "twxs.cmake"
 vscode "valeryanm.vscode-phpsab"
+vscode "waderyan.gitblame"
 vscode "wallabyjs.console-ninja"
 vscode "zobo.php-intellisense"
-npm "corepack"
 npm "gulp-cli"
 npm "gulp"
 npm "npm-check-updates"

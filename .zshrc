@@ -8,7 +8,7 @@ eval "$(zoxide init zsh)"
 
 export PATH="/opt/homebrew/opt/php@8.5/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@8.5/sbin:$PATH"
-export PATH="/opt/homebrew/opt/node@24/bin:$PATH"
+export PATH="/opt/homebrew/opt/node@26/bin:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
